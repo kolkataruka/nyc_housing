@@ -1,0 +1,43 @@
+Main dataset (housing_income_merged.csv): 
+house_number
+- int, the house number of the report address
+- not unique
+- will be used in comparison to other DOB addresses
+street:
+- string, the house street of the report address
+- not unique
+- will be used in comparison to other DOB addresses
+zipcode: 
+- int, the zip code of the police report address
+- not unique
+- will be used in comparison to other DOB addresses
+latitude:
+- float, the location of the report address
+- not unique
+- will be used in comparison to other locations
+longitude:
+- float, the location of the report address
+- not unique
+- will be used in comparison to other locations
+type_of_violation: 
+- string
+- DOB violation vs maintenance code violation
+year_of_violation:
+- int, year of report
+- not unique 
+- looking at time component of housing violations
+status:
+-String, whether the case of the violation is open or closed
+-categorical variable
+med_income:
+-float, median income of the zipcode where violation occurred
+-normalized to 2021 dollars
+-used to look at income's relationship with violation data
+rich:
+-int, dummy variable
+-1 if above median income in new york in that year, 0 otherwise
+-categorical variable
+class: 
+-string, severity of the housing violation
+-either A,B, or C
+
